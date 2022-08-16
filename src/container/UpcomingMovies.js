@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import MoviesList from '../component/MovieList';
 
 
 const UpcomingMovies= () => {
@@ -30,6 +31,14 @@ const UpcomingMovies= () => {
     return(
         <div>
             <h1>Upcoming Movies!</h1>
+            <hr></hr>
+           
+            <ul>
+            <MoviesList movies={movies}/>
+
+            </ul>
+
+        <a href= "https://www.imdb.com/calendar/?region=gb">View more upcoming releases..</a>
 
         </div>
 
